@@ -3,8 +3,9 @@ module com.project.javafxwithjdbc {
     requires javafx.fxml;
 
     opens com.project.javafxwithjdbc to javafx.fxml;
-    exports com.project.javafxwithjdbc;
-
     opens com.project.javafxwithjdbc.Controllers to javafx.fxml;
+    opens com.project.javafxwithjdbc.model.entities to javafx.base; 
+
+    exports com.project.javafxwithjdbc;
     exports com.project.javafxwithjdbc.Controllers;
 }
